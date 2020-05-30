@@ -112,3 +112,56 @@ if(x < 20){
   x <- x / 2
   print(x)
 }
+
+# como borrar variable
+# rm(x)  varias variables rm(a,c,d) todo rm(list=ls())
+
+
+
+## generar numeros aleatorios
+
+
+
+
+
+lanzar <-  print(sample(1:6,1,replace=T))
+
+lanzar <- 5
+
+lanzarDados <- if(lanzar==1 || lanzar==6){
+  puntos <- (2*lanzar)
+  print(puntos)
+  lanzar2 <- print(sample(1:6,1,replace=T))
+
+  
+    if(lanzar2 %% 2 == 0){
+    puntos2 <- 2*lanzar2+5+puntos
+    print(paste("el puntaje obtenido es" ,puntos2))
+  
+    }else{
+    puntaje <- lanzar2*3+puntos
+    print(paste("el puntaje obtenido es" ,puntos2))
+  }
+} else if(lanzar %% 2 == 0){
+    
+  puntaje3 <- lanzar*2+5
+  print(paste("el puntaje obtenido es" ,puntaje3))
+}else{
+    
+  puntaje4 <- 3*lanzar
+  print(paste("el puntaje obtenido es" ,puntaje4))
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
